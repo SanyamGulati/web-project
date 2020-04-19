@@ -1,0 +1,13 @@
+body
+{
+	background-image: url("backimg2.jpg");
+}
+h2
+{
+	color: #ff613d;
+	font-family: 'Lobster', cursive;
+	font-size: 47px;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: center;
+}

@@ -1,0 +1,13 @@
+body
+{
+	background: linear-gradient(to left, #eacda3 94%, #d6ae7b 6%);
+}
+h2
+{
+	color: #ff613d;
+	font-family: 'Lobster', cursive;
+	font-size: 47px;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: center;
+}
