@@ -12,15 +12,17 @@
 <link rel = "stylesheet" type = "text/css" href = "mainStyle.css">
 
 <div class = "topnav">
-  <a class = "active" href = "#home">Home</a>
+  <a class = "active" href = "mainWebPg.html">Home</a>
   <a href = "newsSection.html">News</a>
   <a href = "#aboutSection.html">Contact</a>
   <a href = "aboutSection.html">About</a>
 </div><br> 
 
 <img class = "cmb" style = "float: left" src = "logo.jpg">
+<div class = "top">
 <h1><b>Foods and Flavors</b></h1><br><br>
 <h2>Please fill in the following details:</h2>
+</div>
 
 <script type = "text/javascript">
 
@@ -103,12 +105,13 @@ function getPrice()
 	document.getElementById("rate").innerHTML = "Order Total: Rs. " + sum + "<br> Delivery Charges: Rs. 50 <br> SGST/CGST(@5%): Rs. " + (sum+50)*0.05
 	+ "<br>You pay: Rs. " + (sum+50)*1.05;
 }
-	
 </script>
 
 </head>
 
-<body>
+<body onload = "loadPage()">
+
+<div id = "loader"></div>
 
 <form id = "myForm" method = "post" action = "submissionForm.php" onsubmit = "return validateForm();">
 
@@ -145,6 +148,16 @@ Enter 10-digit mobile number: &emsp; &ensp; &nbsp;
 </div>
 
 </form> 
+
+<script>
+
+var pl = document.getElementById("loader");
+function loadPage()
+{
+	pl.style.display = "none";
+}
+
+</script>
 
 </body>
 
